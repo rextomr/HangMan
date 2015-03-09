@@ -44,7 +44,7 @@ function init(){
         var randomWord = Math.floor(Math.random() * wordList.length);
         theWord = wordList[randomWord];
         for (var i = 0; i < theWord.length; i++) {
-            guessWord[i] = "?";
+            guessWord[i] = "_ ";
         }
         newGuessWord = guessWord.join("");
     }
