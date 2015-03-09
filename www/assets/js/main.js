@@ -147,6 +147,7 @@ function init(){
         $('<button/>', {
             text: alphabetArray[i],
             id: 'btn_' + alphabetArray[i],
+            class: 'btn btn-default',
             width: "30px",
             click: function (event) {
                 checkGuess(event, false);
