@@ -138,7 +138,9 @@ function init(){
             theWordText.text = theWord;
             setTimeout(function(){ doGameOver() }, 3000);
         } else {
+            theWordText.text = "";
             theWordText.text = newGuessWord;
+
         }
 
     }
@@ -206,8 +208,10 @@ function init(){
     				correctGuess = true;
     			}
     		}
-    			newGuessWord = guessWord.join("");
-    			
+
+    		newGuessWord = guessWord.join("");
+    		console.log(newGuessWord);	
+
     		if(!correctGuess){//Error en coincidencia de letra un error mas
     			numWrong++
     		}
